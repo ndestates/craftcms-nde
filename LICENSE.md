@@ -1,4 +1,6 @@
-Copyright (c) 2020, ND Holdings Limited, 8b Spectrum, Jersey CI, 
+License: MIT
+Copyright: (c) 2020
+Author: ND Holdings Limited, 8b Spectrum, Jersey CI, 
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted.

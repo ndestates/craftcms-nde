@@ -1,7 +1,7 @@
 {
   "name": "ndestates/craftcms-nde",
   "description": "Craft CMS website for realtor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "package",
   "require": {
     "bolden/google-maps-api": "1.0.3",
