@@ -1,0 +1,15 @@
+/.env
+/.env.example
+/.idea
+/vendor
+.DS_Store
+/scripts
+/backup/*
+/backup/db/*
+.cache
+.project
+.settings
+/node_modules/*
+/storage/*
+/web/dist/*
+/web/cpresources/*
