@@ -1,0 +1,132 @@
+<?php $this->inc('elements/footer.php'); // get footer.php ?>
+
+
+<?php
+        if (strstr($_SERVER['HTTP_USER_AGENT'], 'iPhone') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'iPad') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Android') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Blackberry') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'OperaMobi') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Opera Mini') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'IEMobile') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Jasmine') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Fennec') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Blazer') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Minimo') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'MOT-') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Nokia') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'SAMSUNG') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'Polaris') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'LG-') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'SonyEricsson') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'SIE-') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'AUDIOVOX') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'mobile') ||
+
+            strstr($_SERVER['HTTP_USER_AGENT'], 'webOS')) {
+            $device = "mobile";
+        }
+        ?>
+
+
+<?php
+        if ($device == "mobile") {
+            ?>
+<script type="text/javascript">
+
+    jQuery(document).ready(function ($) {
+        $('#responsive-slider').advancedSlider({
+            width: '100%',
+            height: '100%',
+            aspectRatio: 1.8,
+            responsive: true,
+            allowScaleUp: true,
+            skin: 'glossy-square-gray',
+            shadow: false,
+            effectType: 'swipe',
+            slideshow: true,
+            slideshowDelay: 20000,
+            pauseSlideshowOnHover: false,
+            swipeThreshold: 10,
+            swipeTouchDrag: true,
+            slideButtons: false,
+            swipeDuration: 50,
+            swipeSlideDistance: 0,
+            thumbnailType: 'none',
+            keyboardNavigation: true,
+            slideshowControls: false,
+            timerAnimation: false,
+            timerToggle: true
+        });
+    });
+</script>
+<?php }else { ?>
+<script type="text/javascript">
+
+    jQuery(document).ready(function ($) {
+        $('#responsive-slider').advancedSlider({
+            width: '100%',
+            height: '100%',
+            aspectRatio: 1.8,
+            responsive: true,
+            allowScaleUp: true,
+            skin: 'glossy-square-gray',
+            shadow: false,
+            effectType: 'fade',
+            slideshow: true,
+            slideshowDelay: 20000,
+            pauseSlideshowOnHover: false,
+            swipeThreshold: 60,
+            swipeTouchDrag: true,
+            slideButtons: false,
+            thumbnailType: 'none',
+            keyboardNavigation: true,
+            slideshowControls: false,
+            timerAnimation: false,
+            timerToggle: true
+        });
+    });
+</script>
+
+<?php } ?>
+
+<script type="text/javascript">
+
+    $('.ov_details_alerts').delay(3000).fadeOut(1000)
+
+    $("#target").click(function () {
+        scrollToAnchor('id3');
+    });
+
+    function scrollToAnchor(aid) {
+        var aTag = $("a[name='" + aid + "']");
+        $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
+    }
+
+    $("#ov_link").click(function () {
+        scrollToAnchor('ov_detail');
+
+    });
+</script>
+
+
+

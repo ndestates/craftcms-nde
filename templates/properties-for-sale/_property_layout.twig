@@ -1,0 +1,129 @@
+{% extends '_layouts/base.html.twig' %}
+
+{% block body %}
+    <div class="pdetail_gallery_cont">
+        <div class="pdetail_gallery">
+
+
+            {% set sliderHandle = entry.propertySlider %}
+
+
+            {{ craft.enupalslider.displaySlider(sliderHandle) }}
+
+
+        </div>
+    </div>
+    <div class="pd_table">
+        <table class="table table-bordered">
+
+            <tr>
+                <td><strong>Status:</strong></td>
+                <td>{{ entry.propertyStatus }}</td>
+            </tr>
+            <tr>
+                <td><strong>Price:</strong></td>
+                <td>{{ entry.priceType }} {{ entry.price|currency('GBP', stripZeros = true) }}</td>
+            </tr>
+
+            <tr>
+                <td><strong>Reference No:</strong></td>
+                <td>{{ entry.reference }} </td>
+            </tr>
+            <tr>
+                <td><strong>Location:</strong></td>
+                <td>{{ entry.parishes }} </td>
+            </tr>
+
+            <tr>
+                <td><strong>Receptions:</strong></td>
+                <td>{{ entry.receptions }}</td>
+            </tr>
+            <tr>
+                <td><strong>Bedrooms:</strong></td>
+                <td>{{ entry.bedrooms }}</td>
+            </tr>
+            <tr>
+                <td><strong>Bathrooms:</strong></td>
+                <td>{{ entry.bathrooms }}</td>
+            </tr>
+            <tr>
+                <td><strong>Parking:</strong></td>
+                <td>{{ entry.parkingType }}</td>
+            </tr>
+            <tr>
+                <td><strong>Parking Spaces:</strong></td>
+
+                <td>{{ entry.parkingSpaces }}</td>
+
+            </tr>
+            <tr>
+                <td><strong>Pet Policy:</strong></td>
+
+                <td>{{ entry.petPolicy }}</td>
+
+            </tr>
+            <tr>
+                <td><strong>Qualification:</strong></td>
+                <td>{{ entry.qualification }}</td>
+            </tr>
+            <tr>
+                <td><strong>Tenure:</strong></td>
+                <td><{{ entry.tenure }}</td>
+            </tr>
+            <tr>
+                <td><strong>Chain Free:</strong></td>
+                <td>{{ entry.chainFree }}</td>
+            </tr>
+            <tr>
+                <td><strong>Primary School Catchment:</strong></td>
+                <td>{{ entry.primarySchoolCatchment }}</td>
+            </tr>
+            <tr>
+                <td><strong>Secondary School Catchment:</strong></td>
+                <td>{{ entry.secondarySchoolCatchment }}</td>
+            </tr>
+            <?php } ?>
+        </table>
+    </div>
+
+
+
+
+    <div class="span8">
+        <div class="pdetail_main">
+
+            <div class="pdetail_section_db">
+                <h3>Property Overview</h3>
+
+                {{ entry.propertyOverview }}
+
+            </div>
+
+
+            <div class="pdetail_section_lb">
+                <h3>Accommodation</h3>
+
+                {{ entry.accommodation }}
+
+            </div>
+
+
+            <?php if ($property_section != '30888') { ?>
+            <div class="pdetail_section_lb">
+                <h3>Location</h3>
+
+            </div>
+            <?php } ?>
+            <?php if ($property_section != '30888') { ?>
+            <div class="pdetail_section_lb">
+                <h3>Floor Plan</h3>
+
+            </div>
+            <?php } ?>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

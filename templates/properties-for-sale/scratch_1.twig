@@ -1,0 +1,17 @@
+{% extends '_layouts/base.html.twig' %}
+
+{% block body %}
+
+
+    <div class="pdetail_gallery_cont">
+        <div class="pdetail_gallery">
+            {% set properties = craft.entries.section('properties-for-sale').all %}
+            {% for properties in properties %}
+                {{ properties.title }}
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+{% endblock %}

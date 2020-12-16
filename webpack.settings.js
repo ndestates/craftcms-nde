@@ -23,9 +23,9 @@ module.exports = {
         templates: "./templates/"
     },
     urls: {
-        live: "https://example.com/",
-        local: "http://example.test/",
-        critical: "http://example.test/",
+        live: "https://craftcms.ndestates.com/",
+        local: "https://127.0.0.1:8000/",
+        critical: "https://127.0.0.1:8000/",
         publicPath: () => process.env.PUBLIC_PATH || "/dist/",
     },
     vars: {

@@ -1,21 +1,24 @@
 {
     "name": "NDE-Estates-Project",
-    "version": "1.0.0",
+    "version": "1.0.8",
     "description": "ND Estates brand website",
     "keywords": [
-        "Example",
-        "Keywords"
+        "property",
+        "jersey estate agents",
+        "estate agents",
+        "realty",
+        "realtor"
     ],
     "homepage": "https://github.com/ndestates/craftcms-nde",
     "bugs": {
         "email": "nick@ndestates.com",
         "url": "https://github.com/example-developer/example-project/issues"
     },
-    "license": "SEE LICENSE IN LICENSE.md",
+    "license": "MIT",
     "author": {
         "name": "Nick Dodsley",
         "email": "nick@ndestates.com",
-        "url": "https://example-developer.com"
+        "url": "https://ndinternet.com"
     },
     "browser": "/web/index.php",
     "repository": {

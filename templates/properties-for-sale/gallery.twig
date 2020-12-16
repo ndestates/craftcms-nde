@@ -1,0 +1,13 @@
+{% for item in entry.elements.all() %}
+    {% for image in item.image.all() %}
+        <div class="col d-flex justify-content-center align-items-center">
+            <div class="item">
+                <div class="img">
+                    <a href="#">
+                        <img style="max-width: 200px;" src="{{ entry.image.url }}" alt="{{ entry.image.title}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endfor %}
